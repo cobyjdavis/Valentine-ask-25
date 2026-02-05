@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <title>Valentine Letter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +12,18 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
+    <!-- Floating hearts background decoration -->
+    <div class="background-hearts"></div>
+
     <!-- Envelope Screen -->
     <div id="envelope-container">
+      <div class="envelope-glow"></div>
       <img src="envelope.png" alt="Envelope" id="envelope" />
       <p>♡ Letter for Bebe ♡</p>
       <h2>From bebe</h2>
+      <div class="tap-hint">✨ Tap to open ✨</div>
     </div>
 
     <!-- Letter Screen -->
@@ -30,15 +34,20 @@
         <img src="cat_heart.gif" class="cat" id="letter-cat" />
 
         <div class="buttons" id="letter-buttons">
-          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="yes-container">
+            <img src="yes.png" class="btn yes-btn" alt="Yes" />
+            <p class="yes-message">Please? 🥺</p>
+          </div>
 
-          <div class="no-wrapper">
+          <div class="no-container">
             <img src="no.png" class="btn no-btn" alt="No" />
           </div>
         </div>
 
         <p id="final-text" class="final-text" style="display: none">
-          <strong>Valentine Date:</strong> Kiln Restaurant at 7pm. Dress fancy!
+          <strong>💕 Valentine Date 💕</strong><br>
+          Kiln Restaurant at 7pm<br>
+          Dress fancy! ✨
         </p>
       </div>
     </div>
